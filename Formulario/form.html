@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+
+        <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    </head>
+    <body>
+
+        <main>
+            <header class="headsUp">
+                <h1>Pesquisa Games 2021</h1>
+                <p>Obrigado pela sua ajuda para melhorar nossa plataforma!</p>
+            </header>
+
+            <div class="container">
+                <div>
+                    <h3>Nome</h3>
+                    <input type="text" placeholder="Coloque seu nome" required="required">
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <input type="email" placeholder="Coloque seu Email" required="required">
+                </div>
+                <div>
+                    <h3 style="display:inline-block">Idade</h3>
+                    <p style="display:inline">(opcional)</p>
+                    <br>
+                    <input type="number" placeholder="Coloque sua idade">
+                </div>
+                <div>
+                    <h3>Qual opção descreve melhor sua ocupação?</h3>
+                    <form> 
+                        <select>
+                            <option disabled selected value="Selecione sua ocuptação">Selecione sua ocupação</option>
+                            <option value="Estudante">Estudante</option>
+                            <option value="Assalariado">Assalariado</option>
+                            <option value="Estagiário">Estagiário</option>
+                            <option value="Prefiro não dizer">Prefiro não dizer</option>
+                            <option value="Outro">Outro</option>
+                     </select>
+                    </form>
+                </div>
+                <div>
+                    <h3>Você recomendaria nossa plataforma para um amigo?</h3>
+                    <form>
+                        <input type="radio" id="yes" name="recomendação" value="Definitivamente">
+                            <label for="yes">Definitivamente</label><br>
+                        <input type="radio" id="maybe" name="recomendação" value="Talvez">
+                            <label for="maybe">Talvez</label><br>
+                        <input type="radio" id="no" name="recomendação" value="Provavelmente não">
+                            <label for="no">Provavelmente não</label><br>
+                    </form>
+                </div>
+                <div>
+                    <h3>Qual o seu recurso favorito em nossa plataforma?</h3>
+                    <form>
+                        <select>
+                            <option value="Promoções">Promoções</option>
+                            <option value="Recomendações">Recomendações</option>
+                            <option value="Biblioteca">Biblioteca</option>
+                            <option value="Fórum">Fórum</option>
+                            <option value="Selecione um opção" disabled selected>Selecione uma opção</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <h3 style="display:inline-block">O que você gostaria que melhorasse?</h3>
+                    <p style="display:inline">Selecione todas as opções que desejar</p>
+                    <form>
+                        <input type="checkbox" name="melhorias" id="frontPage" value="Página Inicial">
+                            <label for="fronPage">Página Inicial</label><br>
+                        <input type="checkbox" name="melhorias" id="lib" value="Biblioteca">
+                            <label for="lib">Biblioteca</label><br>
+                        <input type="checkbox" name="melhorias" id="shop" value="Loja">
+                            <label for="shop">Loja</label><br>
+                        <input type="checkbox" name="melhorias" id="forum" value="Fórum">
+                            <label for="forum">Fórum</label><br>
+                        <input type="checkbox" name="melhorias" id="recomm" value="Recomendações">
+                            <label for="recomm">Recomendações</label><br>
+                        <input type="checkbox" name="melhorias" id="promo" value="Promoções">
+                            <label for="promo">Promoções</label><br>
+                    </form>
+                </div>
+                <div>
+                    <h3>Algum comentário ou sugestão?</h3>
+                    <textarea placeholder="Coloque seu comentário aqui..."></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </div>
+        </main>
+
+        <footer>
+            <p>Miura Team</p>
+        </footer>
+
+    </body>
+</html>
