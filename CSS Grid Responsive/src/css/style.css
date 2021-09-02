@@ -182,4 +182,34 @@ footer a{
     text-decoration:none;
 }
 
-@media screen and (){}
+@media screen and (min-width:768px){
+    .sectiOne p{
+        columns: 2;
+        text-align-last:left;
+    }
+
+    .imgMain{
+        columns:3;
+    }
+    .imgMain:first-of-type {
+        padding: 1em 1em 0 1em;
+    }
+
+    .description{
+        padding: 20%;
+    }
+
+    .responsive{
+        columns:2;
+        column-gap:0;
+    }
+
+    footer{
+    display: inline-flex;
+    text-align: left;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3em 8em 3em 8em;
+    }
+}
