@@ -80,4 +80,10 @@ function endGame(winner = null) {
 	} else {
 		h2.innerHTML = 'Deu velha!';	
 	}
+
+	let count = 3;
+	setInterval(() => {
+		h3.innerHTML = 'Reiniciando em ' + count-- + ' segundos';
+	}, 1000); 
+	setTimeout(() => location.reload(), 4000);
 }
