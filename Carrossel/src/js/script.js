@@ -1,16 +1,19 @@
-const imgs = document.getElementById('img')
-const img = document.querySelectorAll('#img img');
+const slider = document.querySelector('.container');
 
-let idx = 0;
+const leftArrow = document.querySelector('.left');
+const rightArrow = document.querySelector('.right');
 
-function carrossel(){
-    idx++;
+var sectionIndex = 0;
 
-    if(idx > img.length -1){
-        idx = 0;
-    }
+leftArrow.addEventListener('click', function(){
+    sectionIndex = (sectionIndex > 4) ? sectionIndex + 1 : 0;
+    slider.style.transform = 'translate(' + (sectionIndex) + '%)';
+});
 
-    imgs.style.transform = `translateX(${-idx * 500}px)`;
-}
+rightArrow.addEventListener('click', function(){
+    sectionIndex = (sectionIndex < 4) ? sectionIndex + 1 : 0;
+    slider.style.transform = 'translate(' + (sectionIndex) * -100 + '%)';
+});
 
-setInterval(carrossel, 1800);
+
+
