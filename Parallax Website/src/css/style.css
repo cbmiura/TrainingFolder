@@ -1,8 +1,74 @@
-.backImg{
-    width:100%;   
-    z-index:-1;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1, h2, h3, p {
-    text-align:center;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: grey;
+}
+
+.front, .secFront, .thiFront {
+    position: relative;
+    opacity: .7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.front {
+    background-image: url('../img/montanha.jpg');
+    min-height: 670px;
+}
+.secFront {
+    background-image: url('../img/serrado.jpg');
+    min-height: 670px;
+}
+
+.thiFront {
+    background-image: url('../img/tropical.jpg');
+    min-height: 670px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.sectionLight {
+    background-color: #f4f4f4;
+    color:#666;
+}
+
+.sectionDark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.frontText {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.frontText .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.frontText .borderTrans {
+    background-color: transparent;
 }
